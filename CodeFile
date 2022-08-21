@@ -1,0 +1,21 @@
+n = 14
+list = []
+
+sum = 0
+a = 1
+b = 2
+
+list.append(a)
+list.append(b)
+for i in range(n):
+    a = a + b
+    if a%2 == 0:
+        list.append(a)
+    b = a + b
+    if b%2 == 0:
+        list.append(b)
+
+for i in range(0,len(list)):
+    sum = sum + list[i]
+
+print("Sum: " + str(sum))
